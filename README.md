@@ -71,4 +71,4 @@ Email: [1951018@tongji.edu.cn](1951018@tongji.edu.cn)
 
 
 ## Acknowledgement
-The code is implemented based on [pysot](https://github.com/STVIR/pysot), [HiFT](https://github.com/vision4robotics/HiFT), and [Swin Transformer:] (https://github.com/microsoft/Swin-Transformer). We would like to express our sincere thanks to the contributors.
+The code is implemented based on [pysot](https://github.com/STVIR/pysot), [HiFT](https://github.com/vision4robotics/HiFT), and [SwinTransformer] (https://github.com/microsoft/Swin-Transformer). We would like to express our sincere thanks to the contributors.
