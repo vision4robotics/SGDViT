@@ -6,7 +6,7 @@
 Vision-based object tracking has boosted extensive autonomous applications for unmanned aerial vehicles (UAVs). However, the frequent maneuvering flight and viewpoint change are prone to cause nerve-wracking challenges, e.g., aspect ratio change and scale variation. The cross-correlation operation’s weak ability to mine perceptual similarity and easy introduction of background information become more apparent when confronted with these challenges. To address these issues, this work proposes a novel saliency-guided dynamic vision Transformer (SGDViT) for UAV tracking. Specifically, a UAV task-oriented object saliency mining network is designed to refine the perceptual similarity indicated by cross-correlation operation, distinguishing the foreground and background preliminarily. Furthermore, an innovative saliency adaption embedding operation is developed to generate dynamic tokens based on the initial saliency, reducing the computational complexity of the Transformer structure. On this bases, a lightweight saliency filtering Transformer is implemented to refine the saliency information and increase attention to the appearance
 information. Comprehensive evaluations on three authoritative UAV tracking benchmarks and real-world tests have proven the effectiveness and robustness of the proposed method. 
 
-![Workflow of our tracker](https://github.com/vision4robotics/SGDViT/imgs/2.png)
+![Workflow of our tracker](https://github.com/vision4robotics/SGDViT/blob/main/imgs/2.png)
 
 This figure shows the workflow of our tracker.
 
