@@ -19,7 +19,7 @@ from pysot.utils.model_load import load_pretrain
 
 torch.set_num_threads(1)
 
-parser = argparse.ArgumentParser(description='HiFT demo')
+parser = argparse.ArgumentParser(description='SGDViT demo')
 parser.add_argument('--config', type=str, default='../experiments/config.yaml', help='config file')
 # parser.add_argument('--snapshot', type=str, default='./snapshot/general_model.pth', help='model name') checkpoint00_e60.pth
 # parser.add_argument('--video_name', default='../test_dataset/sequence_name', type=str, help='videos or image files')
