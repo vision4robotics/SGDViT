@@ -28,7 +28,7 @@ Download pretrained model: [result](https://pan.baidu.com/s/1xr0aLdXmuJc7CbAQRrE
 Download testing datasets and put them into `test_dataset` directory. If you want to test the tracker on a new dataset, please refer to [pysot-toolkit](https://github.com/StrangerZhang/pysot-toolkit) to set test_dataset.
 
 ```bash 
-python test.py                                
+python ./tools/test.py                                
 	--dataset UAV10fps                 #dataset_name
 	--snapshot snapshot/result.pth  # tracker_name
 ```
@@ -52,8 +52,7 @@ Download the datasets：
 To train the model, run `train.py` with the desired configs:
 
 ```bash
-cd tools
-python train.py
+python ./tools/train.py
 ```
 
 ### 4. Evaluation
