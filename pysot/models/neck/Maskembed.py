@@ -2,7 +2,6 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from timm.models.layers import to_2tuple
 from pysot.models.utils.windows import window_partition,maskwindow_reverse,maskwindow_partition 
 
 class MaskEmbed(nn.Module):
