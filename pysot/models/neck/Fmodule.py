@@ -6,10 +6,6 @@ class Fmodule(nn.Module):
     """
     input: template: 1, 256, 6, 6
            search:   1, 256, 26, 26
-
-    output: s:       1, 256, 17, 17
-            x:       1, 256, 17, 17
-            mask:    1, 1, 26, 26
     """
     def __init__(self,embed_dim=256,mlp_ratio=4.,dim=384):
         super().__init__()
