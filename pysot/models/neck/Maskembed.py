@@ -43,13 +43,7 @@ class MaskEmbed(nn.Module):
 
         return x#
     
-    if __name__ == '__main__':
-    x = torch.rand(6,256,16,16)
-    z = torch.rand(6,1,16,16)
-    layer =MaskEmbed()
-    x = layer(x,z)
-    print(x.shape)
-    
+        
     
 
      
