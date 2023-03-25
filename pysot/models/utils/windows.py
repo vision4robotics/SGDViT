@@ -105,42 +105,4 @@ def position(window_size,num_heads):
     return relative_position_bias_table, relative_position_index
 
 
-# mask = torch.rand(2,1,28,28)
-# x = torch.rand(2,256,28,28)
-# _, C, _, _ =x.shape
-# size = 4
-# layer1 = nn.Conv2d(256, 256, kernel_size=2, stride=2)
-# layer2 = nn.BatchNorm2d(256)
-# layer3 = nn.ReLU(inplace=True)
-# mask = F.gumbel_softmax(mask, hard=True)
-# x_windows = window_partition(x, size, mask=True)                   #B, num_windows, C, window_size, window_size
-# mask_windows = window_partition(mask, size, mask=True)             #B, num_windows, 1, window_size, window_size
-# mask_windows = mask_windows.flatten(3)                             #B, num_windows, 1,  window_size*window_size
-# mask_windows = torch.norm(mask_windows, p=1, dim=3)
-# mask_windows, indices = torch.sort(mask_windows, dim = 1)
-# print(indices.shape)
-# B, K, _ = indices.shape
-# keep_node = 17
-# indices = torch.split(indices, [keep_node,K - keep_node], dim=1)  
-# index = torch.squeeze(indices[0])
-# index_ = torch.squeeze(indices[1])
-# print(index.shape)
-# x_windows_s = x_windows[torch.arange(B)[:,None],index,:]
-# print(x_windows.shape)
-# print(x_windows_s.shape)
-# x_windows_b = x_windows[torch.arange(B)[:,None],index_,:]
-# x_windows_s = maskwindow_partition(x_windows_s, size//2)
-# print(x_windows_s.shape)
-# print(x_windows_b.shape)
-# x_windows_b = layer1(x_windows_b.view(-1, C, size, size))
-# x_windows_b = layer2(x_windows_b)
-# x_windows_b = layer3(x_windows_b)
-# x_windows_b=x_windows_b.view(B, -1, C, size//2, size//2)
-# print(x_windows_b.shape)
-# x = torch.cat([x_windows_b,x_windows_s], dim=1)
-
-
-# x = maskwindow_reverse(x,size//2,20,20)
-# print(x.shape)
-
 
